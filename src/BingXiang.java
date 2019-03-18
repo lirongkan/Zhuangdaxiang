@@ -14,11 +14,11 @@
  * 〈〉
  *
  * @author Administrator
- * @create 2019-3-18
+ * @date 2019-3-18
  * @since 1.0.0
  */
 public class BingXiang {
-    private String name;
+    private String name ;
     private  int size;
 
     void setName(String name){
@@ -27,15 +27,15 @@ public class BingXiang {
     void  setSize(int size) {
         this.size=size;
     }
-    String getName(String name){
+    String getName(){
         return  name;
 
     }
-    int getSize(int size){
+    private int getSize(){
         return size;
     }
     void open(BingXiang bbb){
-        System.out.println(this.name + " is open!");
+        System.out.println(bbb.getName() + "   " +bbb.getSize()  +"+ is open!");
     }
 
     void zhuangDaXiang(DaXiang a){
@@ -47,6 +47,6 @@ public class BingXiang {
     }
 
     void close(BingXiang b){
-        System.out.println(this.name + " is close!");
+        System.out.println(b.getName() + " is close!");
     }
 }
