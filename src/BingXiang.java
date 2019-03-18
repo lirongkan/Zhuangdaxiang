@@ -39,11 +39,10 @@ public class BingXiang {
     }
 
     void zhuangDaXiang(DaXiang a){
-        this.name = a.getName();
-        this.size = a.getSize();
-        System.out.println(this.name +"  "+ this.size + " 被装进去了！");
+      /*  this.name = a.getName();//因为name，private是私有类型，不可再赋值，因此直接调用get函数解决
+        this.size = a.getSize();*/
 
-
+        System.out.println(a.getName() +"  "+ a.getSize() + " 被装进去了！");
 
     }
 
