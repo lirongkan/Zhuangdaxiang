@@ -1,4 +1,4 @@
-/**
+package zhuangdaxiang; /**
  * Copyright (C), 2015-2019, XXX有限公司
  * FileName: ZhuangDaXiang
  * Author:   Administrator
@@ -9,7 +9,8 @@
  * 作者姓名           修改时间           版本号              描述
  */
 
-import sun.applet.Main;
+import zhuangdaxiang.BingXiang;
+import zhuangdaxiang.DaXiang;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -28,7 +29,7 @@ public class ZhuangDaXiang {
         a1.setSize(1000);
         b1.setName("bingxiang1");
         b1.setSize(10);
-        b1.open(b1);
+        b1.open();
         b1.zhuangDaXiang(a1);
         b1.close(b1);
 

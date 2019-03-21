@@ -1,4 +1,4 @@
-/**
+package zhuangdaxiang; /**
  * Copyright (C), 2015-2019, XXX有限公司
  * FileName: BingXiang
  * Author:   Administrator
@@ -34,15 +34,15 @@ public class BingXiang {
     private int getSize(){
         return size;
     }
-    void open(BingXiang bbb){
-        System.out.println(bbb.getName() + "   " +bbb.getSize()  +"+ is open!");
+    void open(){
+        System.out.println(this.getName() + "   " +this.getSize()  +"+ is open!");
     }
 
-    void zhuangDaXiang(DaXiang a){
+    void zhuangDaXiang(DaXiang bbb){
       /*  this.name = a.getName();//因为name，private是私有类型，不可再赋值，因此直接调用get函数解决
         this.size = a.getSize();*/
 
-        System.out.println(a.getName() +"  "+ a.getSize() + " 被装进去了！");
+        System.out.println(bbb.getName() +"  "+ bbb.getSize() + " 被装进去了！");
 
     }
 

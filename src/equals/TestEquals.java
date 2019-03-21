@@ -19,6 +19,8 @@ public class TestEquals {
         System.out.println(b);
         boolean c = new Person("C",22).equals(p1);
         System.out.println(c);
+
+
     }
 
 
