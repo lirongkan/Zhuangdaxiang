@@ -10,6 +10,6 @@
  */
 package testreturn;
 
-public abstract class Animal {
-    public abstract void eat();
+public interface Animal {
+     void eat();
 }

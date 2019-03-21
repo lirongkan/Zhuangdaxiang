@@ -12,13 +12,18 @@ package testreturn;
 
 public class GetAnimal {
     public Animal getAnimal(int num ){
-        if(num == 1) {
+        /*if(1 == num ) {
             Animal a = new Cat();
             return a;
         }else{
-            Animal b = new Dog();
-            return b;
-        }
-    }
+                Animal b = new Dog();
+                return b;
+        }*/
+        if(1 == num)
+            //调用匿名对象
+            return new Cat();
+        return new Dog();
 
+    }
 }
+
