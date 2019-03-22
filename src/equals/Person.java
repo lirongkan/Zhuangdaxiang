@@ -14,7 +14,9 @@ public class Person extends Object {
     private String name;
     private int age;
 
-    Person(){}
+    public Person(){
+        System.out.println("垃圾收取了");
+    }
 
     Person(String name,int age){
     this.name = name;

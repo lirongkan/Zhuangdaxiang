@@ -36,9 +36,12 @@ public class CalendarDemo {
         my.set(Calendar.DATE, 10);
         //获取时间中的天数
         /*int day = c.get(Calendar.DATE);
-        int myDay = my.get(Calendar.DATE);
+        int myDay = my.get(Calendar.Year);
         System.out.println(day - myDay);*/
-        System.out.println(my.get(Calendar.DATE));
+        int myyear = my.get(Calendar.YEAR);
+        int mymonth = my.get(Calendar.MONTH)+1;
+        int myday = my.get(Calendar.DAY_OF_MONTH);
+        System.out.println(myyear+"年" +mymonth+"月"+myday+"日");
 
 
     }
