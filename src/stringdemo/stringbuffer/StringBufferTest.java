@@ -12,21 +12,21 @@ package stringdemo.stringbuffer;
 
 public class StringBufferTest {
     public static void main(String[] args){
-        int arr[] = {1,2,3,4,5,1,3};
+        int arr[] = {1,2,3,4,5,6};
         System.out.println(toString(arr));
 
     }
     public static String toString(int[] arr){
         StringBuffer buffer = new StringBuffer();
         buffer.append("[");
-        for(int i =0;i<arr.length;i++){
-            if(i == arr.length-1){
-                buffer.append(arr[i]).append("]");
-            }
-            if(i < arr.length-1){
-                buffer.append(arr[i]).append(",");
-
-            }
+       /* Integer j=new Integer(12);
+       System           Ctrl+左键直接跳到源码
+       */
+        for(int i =0;i< arr.length;i++){
+                if(i == arr.length-1)
+                buffer.append(arr[i]+"]");
+            else
+            buffer.append(arr[i]+ ", ");
 
         }
         return buffer.toString();

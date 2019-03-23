@@ -12,7 +12,7 @@ package stringdemo;
 
 public class StringDemo4 {
     public static void main(String[] args){
-        function_5();
+        function_11();
     }
     public static void function_9(){
 
@@ -56,6 +56,26 @@ public class StringDemo4 {
         String sb1 = str.substring(16,21);
         System.out.println(sb1);
         System.out.println(sb1.length());
+    }
+    public static void function_10(){
+        String str ="abcde";
+        byte[] by =str.getBytes();
+        char[] ch =str.toCharArray();
+        for(int i=0; i<str.length();i++){
+            System.out.print(ch[i]+" ");
+            System.out.print(by[i] + " " );
+        }
+
+    }
+    public static void function_11(){
+        String str1 = "abcde";
+        String str2 = "abcde";
+        boolean b =str1.equals(str2);
+        boolean c = str1.equalsIgnoreCase(str2);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(str1.toString());
+
     }
 
 }

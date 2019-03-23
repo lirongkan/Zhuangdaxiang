@@ -12,48 +12,36 @@ package systemdemo;
 
 import equals.Person;
 
+import java.util.Arrays;
+
 public class SystemDemo {
     public static void main(String[] args){
-        function();
+        function_2();
     }
-    public static void function_4(){
-        int[] src = {11,22,33,44,55,66};
-        int[] desc ={77,88,99,0};
-        //length 不能超过目标数组的长度
-        System.arraycopy(src,2,desc,0,4);
-        for(int i= 0; i<desc.length;i++){
-            System.out.println(desc[i]);
-        }
-    }
-
-    public static void function_3(){
-        System.out.println(System.getProperties());
-    }
-        //static void gc()
-    public static void function_2(){
-        new Person();
-        new Person();
-        new Person();
-        new Person();
-        new Person();
-        new Person();
-        System.gc();
-
-    }
-    public static void function_1(){
-        while(true){
-            System.out.println("hello");
-            System.exit(0);
-        }
-    }
-
-    public static void function(){
-        long start = System.currentTimeMillis();
+   public static void function_1(){
+        long l1 =System.currentTimeMillis();
+        System.out.println(l1);
         for(int i=0;i<10000;i++){
             System.out.println(i);
         }
-        long end = System.currentTimeMillis();
-        System.out.println(end - start);
-    }
+        long l2 =System.currentTimeMillis();
+        System.out.println(l2-l1);
+
+   }
+   public static void function_2(){
+        int[] src ={1,2,3,4,5,6,7,8};
+        int[] desc ={9,9,9,9,9,9,9,9};
+       System.arraycopy(src,1,desc,1,4);
+       StringBuffer sb =new StringBuffer("[");
+       for(int i=0;i<desc.length;i++){
+           if(i==desc.length-1)
+           sb.append(desc[i]+"]");
+           else
+               sb.append(desc[i]+", ");
+       }
+       System.out.println(sb.toString());//[9 ,2 ,3 ,4 ,5 ,9 ,9 ,9]
+       System.out.println(desc.toString());//[I@1b6d3586
+   }
+
 
 }

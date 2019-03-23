@@ -12,9 +12,12 @@ package math;
 
 import sun.applet.Main;
 
+import java.util.Arrays;
+
 public class MathDemo {
     public static void main(String[] args){
- function_6();
+
+        function_7();
     }
 
     public static void function(){
@@ -23,7 +26,7 @@ public class MathDemo {
         int j = Math.abs(-99);
         System.out.println(j);
     }
-
+//Arrays
     public static void function_1(){
         double d = Math.ceil(4.2);
         System.out.println(d);
@@ -52,6 +55,10 @@ public class MathDemo {
         double d = Math.round(1.22);
         System.out.println(d);
     }
+    public static void function_7(){
+        System.out.println(Math.PI * Math.E);
+    }
+
 
 
 

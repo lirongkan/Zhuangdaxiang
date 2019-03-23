@@ -11,48 +11,48 @@
 package stringdemo;
 
 public class StringTest {
-    public static void main(String[] args){
-       getCount("jhfsjfUJ@OIPUzsdfjs");
+    public static void main(String[] args) {
+        getCount("jhfsjfUJ@OIP234Uzsdfjs");
         System.out.println(toConvert("KSJFLKSJFsfs"));
-       System.out.println(getStringCount("SJFSJFPOIjksdfipisfwerwrwerdf","we"));
+        System.out.println(getStringCount("SJFSweweJFPOIwwefweweewjksdfipisfwewfewewfewerwrfrdf", "we"));
     }
 
-   public static String toConvert(String str){
-        String first =str.substring(0,1);
-        String second = str.substring(1);
-        //调用String类方法
-       first = first.toLowerCase();
-       second = second.toUpperCase();
-       return first + second;
-   }
+    public static String toConvert(String str) {
+        String sub1 = str.substring(0, 1);
+        String sub2 = str.substring(1);
+        sub1 = sub1.toUpperCase();
+        sub2 = sub2.toLowerCase();
+        return sub1 + sub2;
 
-   public static void getCount(String str){
-        int daxie = 0;
-        int xiaoxie = 0;
-        int shuzi = 0;
-        for(int i =0;i < str.length();i++){
-           char  a = str.charAt(i);
-           if(a>=48 && a <=57){
-               shuzi++;
-           }else if(a >=97&& a<=122){
-               xiaoxie++;
-           }else if (a>=65 &&a<=90){
-               daxie++;
-           }
-
-           }
-        System.out.println(daxie +" "+shuzi +" "+xiaoxie);
     }
 
-    public static int getStringCount(String str,String key){
-
-        int count =0;
-        int index = 0;
-
-        while((index = str.indexOf(key) )!= -1){
-            count++;
-            str = str.substring((index+key.length()));
+    public static void getCount(String str) {
+        int upletter = 0;
+        int lowletter = 0;
+        int num = 0;
+        char[] ch = str.toCharArray();
+        for (int i = 0; i < str.length(); i++) {
+            char a = ch[i];
+            if (a > 'a' && a < 122)
+                lowletter++;
+            if (a > 'A' && a < 'Z')
+                upletter++;
+            if (a > 48 && a < 57)
+                num++;
         }
-        return count;
+        System.out.println(upletter + " " + lowletter + " " + num);
+    }
+
+
+    public static int getStringCount(String str, String key) {
+        int index ;
+        int count = 0;
+        while((index =str.indexOf(key)) != -1){
+            count++;
+            str = str.substring(index + key.length());
+
+        }
+
+       return count;
     }
 }

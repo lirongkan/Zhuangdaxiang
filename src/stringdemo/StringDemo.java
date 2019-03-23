@@ -12,12 +12,25 @@ package stringdemo;
 
 public class StringDemo {
     public static void main(String[] args){
-        //引用变量str执行内存变化
-        //定义好的字符串对象不变
-        String str  = "itcast";
-        System.out.println(str);
-        str = "hahahah";
-        System.out.println(str);
+       /* String str1 = "";
+        String str2 = "abc";
+        String str3 = new String("abcd");
+        byte[] by = new byte[]{11, 12, 13, 14};
+        char[] ch ={'A','B','c'};
+        String str4 = new String(by);
+        String str5 = new String(ch);
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str3 == str2);
+        System.out.println(str2.equals(str3));
+        System.out.println(str4);
+        System.out.println(str5);*/
+       char a ='A';
+       int b = a  +1;
+       System.out.println(a);
+       System.out.println(b);
+
+
     }
 
 }

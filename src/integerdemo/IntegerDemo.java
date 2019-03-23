@@ -16,11 +16,23 @@ public class IntegerDemo {
     }
 
     public static void function_3(){
-        Integer in = new Integer("100");
+    /*    Integer in = new Integer("100");
+        //自动封装与解封
         int i = in.intValue();
+        int j = in;
+        System.out.println(j--);
        
-//        System.out.println(i--);//100
-        System.out.println(--i);//99
+        System.out.println(i--);//100
+        System.out.println(--i);//99*/
+
+        String s ="123";
+        Integer t = new Integer(s);
+//        int m = 123;
+        //在[-128,127]不直接创建新对象时（自动装箱），会自动使用原来的空间
+        Integer m = 223;
+        Integer n =223;
+        System.out.println(n == m);//true
+        System.out.println(n.equals(m));//true
     }
 
     public static void function_2(){

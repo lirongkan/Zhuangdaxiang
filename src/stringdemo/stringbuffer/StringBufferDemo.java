@@ -16,22 +16,17 @@ public class StringBufferDemo {
     }
 
     public static void function(){
-        StringBuffer buffer = new StringBuffer();
-        buffer.append("abcdefg");
-        buffer.append(123456);
-       // System.out.println(buffer);
-        //String s = buffer.toString();
-        buffer.reverse();
-        System.out.println(buffer);
-        /*buffer.replace(1,2,"aaa");
-        System.out.println(buffer);*/
-        buffer.insert(0,1);
-        System.out.println(buffer);
-        buffer.delete(0,1);
-        System.out.println(buffer);
-        buffer.append("23").append(12);
-        System.out.println(buffer);
-        String str = buffer.toString();
-        System.out.println(str);
+
+        StringBuffer sb =new StringBuffer();
+
+
+
+
+        System.out.println(sb.append("haha"));
+        System.out.println(sb.delete(1,2));
+        System.out.println(sb.insert(1,"abcde"));
+        System.out.println(sb.replace(1,2,"ABC"));
+        System.out.println(sb.reverse());
+        System.out.println(sb.toString());
     }
 }

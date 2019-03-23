@@ -12,8 +12,8 @@ package stringdemo;
 
 public class StringDemo3 {
     public static void main(String[] args){
-        function_3();
-        function_2();
+
+        function();
     }
     public static void function_1(){
         /**
