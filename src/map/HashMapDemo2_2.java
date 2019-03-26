@@ -38,6 +38,10 @@ public class HashMapDemo2_2 {
             String key = entry.getKey();
             Person value = entry.getValue();
             System.out.println(key + " " + value);
+            /*
+            * Iterator<Map.Entry<String,Person>> it = set.iterator();
+            * */
+
 
         }
     }
