@@ -10,9 +10,14 @@
  */
 package integerdemo;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class IntegerDemo2 {
     public static void main(String[] args){
-        function_2();
+
+        function_3();
     }
 
     public static void function_1(){
@@ -32,7 +37,7 @@ public class IntegerDemo2 {
 
         //in+1  ==> in.inValue()+1 = 2
         // in = 2    自动装箱*/
-        Integer in =1;
+        Integer in = 1;
         in = in +1;
         System.out.println(in);
     }
@@ -50,5 +55,22 @@ public class IntegerDemo2 {
 
 
     }
+    public static void function_3(){
+        String str ="123";
+        int i = Integer.parseInt(str);
+        int j = Integer.valueOf(str);
+        System.out.println(i == j);
+
+        String str2 = i + "";
+        String str3 = Integer.toString(i);
+        String str4 = String.valueOf(i);
+        System.out.println(str2 == str3);
+        System.out.println(str2.equals(str3));
+        System.out.println(str3.equals(str4));
+
+
+
+    }
+
 
 }

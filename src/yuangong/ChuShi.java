@@ -11,11 +11,16 @@
 package yuangong;
 
 public class ChuShi extends Employee {
+    private String name;
+    private int age;
 
     public ChuShi(){}
 
     public ChuShi(String name, int age) {
         super(name, age);
+    }
+    public String toString(){
+        return name +"  "+ age;
     }
 
     public void work(){

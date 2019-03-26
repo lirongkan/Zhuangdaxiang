@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class CalendarDemo {
     public static void main(String[] args) throws Exception {
-        function_7();
+        function_8();
     }
     public static void function_1(){
         //由于Calendar是抽象类，静态，采用类名.方法名调用方法
@@ -98,6 +98,13 @@ public class CalendarDemo {
             int j = c.get(Calendar.DAY_OF_YEAR);
             System.out.println(j);
         }
+    }
+    public static void function_8(){
+        Calendar c = Calendar.getInstance();
+        c.set(1997,Calendar.MARCH,27);
+        Date date = c.getTime();
+        System.out.println(date);
+
     }
 }
 
