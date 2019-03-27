@@ -58,7 +58,7 @@ public class MapMapDemo {
                 String idKey = kindEntry.getKey();
                 Integer sizeValue = kindEntry.getValue();
                 System.out.println(kindKey+"."+idKey+"."+sizeValue);
-
+                System.out.println();
             }
 
         }
