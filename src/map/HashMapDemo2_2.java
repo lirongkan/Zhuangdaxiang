@@ -15,7 +15,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapDemo2_2 {
+public class  HashMapDemo2_2 {
     public static void main(String[] args){
         function();
     }
