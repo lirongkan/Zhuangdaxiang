@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package file.fileinputstreamdemo;
+package io.fileinputstreamdemo;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -30,10 +30,10 @@ public class Test_2 {
         try{
             fr = new FileReader("d:\\abc\\a.txt");
             fw = new FileWriter("d:\\abc\\a1.txt");
-            char[] cbuf = new char[1024];
+            char[] c = new char[1024];
             int len = 0 ;
-            while(( len = fr.read(cbuf))!=-1){
-                fw.write(cbuf, 0, len);
+            while(( len = fr.read(c))!=-1){
+                fw.write(c, 0, len);
                 fw.flush();
             }
 

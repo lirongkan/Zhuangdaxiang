@@ -8,20 +8,25 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package file.fileinputstreamdemo;
+package io.fileinputstreamdemo;
 
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class CopyDemo_2 {
     public static void main(String[] args) {
         FileReader fr = null;
         FileWriter fw = null;
-        try {
-            //注意源文件编码和IDEA编码一致，UTF-8
+       // File parent  = null;
+        String str= null;
 
-            fr = new FileReader("d:\\abc\\a\\Copy1.java");
+        try {
+            str = new Scanner(System.in).next();
+            //注意源文件编码和IDEA编码一致，UTF-8
+           // parent =new File("d:\\abc\\a");
+            fr = new FileReader(str);
             fw = new FileWriter("d:\\abc\\b\\Copy_2.java");
             char[] c = new char[1024];
             int len = 0;

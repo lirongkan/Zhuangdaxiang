@@ -8,7 +8,7 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package file.fileinputstreamdemo;
+package io.fileinputstreamdemo;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -8,10 +8,8 @@
  * <author>          <time>          <version>          <desc>
  * 作者姓名           修改时间           版本号              描述
  */
-package file.fileoutputstreamdemo;
+package io.fileoutputstreamdemo;
 
-import javax.annotation.processing.SupportedSourceVersion;
-import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
     //IO流的异常处理  try catch finally
@@ -27,25 +25,23 @@ public class FileOutputStreamExcaption {
          * @return:void
          * @Date: 2019-3-28 15:07
          */
-
         FileOutputStream fos =null;
         try {
-
-            fos = new FileOutputStream("d:\\abc\\a.txt");
-            fos.write(1);
-        }catch (IOException ex){
+             fos= new FileOutputStream("d:\\abc\\a\\a.txt");
+            fos.write(48);
+        }catch(IOException ex) {
             System.out.println(ex);
-            throw new RuntimeException("输入失败，请重试！");
+            throw new RuntimeException("文件写入失败，重试");
 
-        }finally {
+        }finally{
             try {
                 if(fos != null)
-                fos.close();
-
-            }catch (IOException ex){
+                    fos.close();
+            }catch(IOException ex){
                 throw new RuntimeException("关闭资源失败，请重试！");
 
             }
+
         }
     }
 }
