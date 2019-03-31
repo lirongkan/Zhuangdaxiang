@@ -1,13 +1,3 @@
-/**
- * Copyright (C), 2015-2019, XXX有限公司
- * FileName: Commons_IODemo2
- * Author:   Administrator
- * Date:     2019-3-30 0:08
- * Description:
- * History:
- * <author>          <time>          <version>          <desc>
- * 作者姓名           修改时间           版本号              描述
- */
 package io;
 
 import org.apache.commons.io.FileUtils;
@@ -24,7 +14,7 @@ public class Commons_IODemo2 {
      * static void copyDirectoryToDirectory(File src,File desc)
      * 复制文件夹
      */
-    public static void function_3() throws IOException{
+    private static void function_3() throws IOException{
         FileUtils.copyDirectoryToDirectory(new File("d:\\abc"), new File("c:\\"));
     }
 
