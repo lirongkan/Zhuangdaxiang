@@ -1,10 +1,9 @@
 package jdbcdemo.jdbcproperties;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
-/**
+/**测试properties配置文件放在那里有效--src创建Resource Bundle文件，不用写后缀
  * @author: lrk
  * 2019/4/4 13:05
  */
