@@ -20,7 +20,7 @@ public class ListDemo {
 
 
     public static void function() {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("abc1");
         list.add("abc2");
         list.add("abc3");
@@ -31,8 +31,8 @@ public class ListDemo {
         System.out.println(str1);
         */
      String str  = list.remove(0);
-     System.out.println(str);
-     System.out.println(list);
+        System.out.println(str);
+        System.out.println(list);
      System.out.println(list.get(0));
     }
 }
