@@ -19,10 +19,11 @@ public class ChuShi extends Employee {
     public ChuShi(String name, int age) {
         super(name, age);
     }
+    @Override
     public String toString(){
         return name +"  "+ age;
     }
-
+    @Override
     public void work(){
         System.out.println("我在煮饭 " + getName()+"  "+ getAge());
     }

@@ -22,9 +22,9 @@ public class ZhangWuDao {
 
     public List<ZhangWu> selectAll(){
         try {
-            String sql = "SELECT * FROM gjp_zhangwu";
-            List<ZhangWu> list = qr.query(sql, new BeanListHandler<>(ZhangWu.class));
-            return list;
+            String sql ="SELECT * FROM gjp_zhangwu";
+            List<ZhangWu> list =  qr.query(sql,new BeanListHandler<>(ZhangWu.class));
+            return  list;
         }catch(SQLException ex){
             System.out.println(ex);
             throw new RuntimeException("查询所有数据失败！");

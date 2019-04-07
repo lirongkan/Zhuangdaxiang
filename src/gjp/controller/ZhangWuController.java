@@ -13,14 +13,12 @@ import java.util.List;
 public class ZhangWuController {
     private ZhangWuService service = new ZhangWuService();
 
-    /*
-	 * 定义方法,实现条件查询账务
-	 * 方法由试图层调用,传递两个日期的字符串
-	 * 调用service层的方法,传递两个日期字符串,获取结果集
-	 * 结果集返回给试图*/
+    /* 定义方法,实现条件查询账务
+	 方法由试图层调用,传递两个日期的字符串
+	 调用service层的方法,传递两个日期字符串,获取结果集
+	 结果集返回给试图*/
     public List<ZhangWu> select(String startDate,String endDate){
-        List<ZhangWu> list = service.select(startDate,endDate);
-        return list;
+        return service.select(startDate,endDate);
     }
 
     public List<ZhangWu> selectAll(){

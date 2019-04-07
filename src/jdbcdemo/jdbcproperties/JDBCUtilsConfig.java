@@ -17,12 +17,13 @@ import static java.lang.Class.forName;
  * 2019/4/4 12:18
  */
 public class JDBCUtilsConfig {
+    /*抽出*/
     private static Connection conn;
     private static String driverClass;
     private static String url;
     private static String username;
     private static String password;
-
+        /*减少静态代码块中代码量*/
         static{
             try {
                 getConfig();
@@ -48,10 +49,10 @@ public class JDBCUtilsConfig {
         }
 }
 /*
-try{
+      try{
         InputStream in = JDBCUtilsConfig.class.getClassLoader().getResourceAsStream("database.properties");
         *//*取出键值对，用load方法，接收输入流*//*
-        Properties pro = new Properties();
+        properties pro = new properties();
         pro.load(in);
         String driverClass =  pro.getProperty("driverClass");
         String username = pro.getProperty("username");

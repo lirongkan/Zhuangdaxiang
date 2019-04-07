@@ -18,25 +18,25 @@ import java.util.List;
  */
 
 public class JDBCUtilsDomain {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         //使用JDBC工具类,直接获取数据库连接对象
-        Connection conn = JDBCUtils.getConnection();
+
         //连接获取数据库SQL语句执行者对象
-        PreparedStatement pst = conn.prepareStatement("SELECT * FROM sort");
         //调用查询方法,获取结果集
-        ResultSet rs = pst.executeQuery();
         //创建集合对象
         /*创建List集合存储Sort对象*/
+        Connection conn = JDBCUtils.getConnection();
+        String sql = "SELECT * FROM sort";
+        PreparedStatement pst = conn.prepareStatement(sql);
+        ResultSet rs = pst.executeQuery();
         List<Sort> list = new ArrayList<>();
         while(rs.next()){
             Sort s = new Sort(rs.getInt("sid"),rs.getString("sname"),
                     rs.getDouble("sprice"),rs.getString("sdesc"));
             list.add(s);
         }
-        JDBCUtils.close(conn,pst,rs);
-        for(Sort aaa: list){
-            System.out.println(aaa);
+        for(Sort t: list){
+            System.out.println(t);
         }
-
     }
 }

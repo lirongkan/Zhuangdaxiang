@@ -15,8 +15,11 @@ import java.util.Set;
 
 public class HashSetDemo {
     public static void main(String[] args){
-        Set<Person> set = new HashSet<Person>();
+        Set<Person> set = new HashSet<>();
        // Person p = new Person("C",90);
+        /*不能存储重复的值：
+        * 1、先比较hashCode，是否重写了此方法
+        * 2、equals，是否重写了此方法*/
         set.add(new Person("A",12));
         set.add(new Person("A",12));
         set.add(new Person("B",18));

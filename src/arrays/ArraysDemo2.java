@@ -10,6 +10,7 @@
  */
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysDemo2 {
@@ -23,6 +24,7 @@ public class ArraysDemo2 {
         int index = Arrays.binarySearch(arr,10);//-6 -本来的位置-1
         int index2 = Arrays.binarySearch(arr,3);//1
         System.out.println(index+ " "+ index2);
+
 
     }
 

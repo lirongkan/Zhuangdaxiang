@@ -8,11 +8,9 @@ import java.lang.reflect.Method;
  */
 public class ReflectDemo7 {
     public static void main(String[] args) throws Exception{
-        Class c = Class.forName("cn.itcast.demo1.Person");
-        Object obj = c.newInstance();
-        //调用Class类的方法getMethod获取指定的方法sleep
-        Method method = c.getMethod("sleep", String.class,int.class,double.class);
-        //调用Method类的方法invoke运行sleep方法
-        method.invoke(obj, "休眠",100,888.99);
+       Class c = Class.forName("reflection.Person");
+       Method method =  c.getMethod("sleep",String.class,int.class,double.class);
+       Object obj = c   .newInstance();
+       method.invoke(obj,"Lrk",8,186);
     }
 }

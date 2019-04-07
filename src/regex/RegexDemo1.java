@@ -16,7 +16,7 @@ public class RegexDemo1 {
     }
     public static void method1(){
     String ip = "192 .16        8.1 05.2 7";
-    //        String[] strArr = ip.split("//.");//转义字符是反斜杠！！
+    //        String[] strArr = netprogramming.split("//.");//转义字符是反斜杠！！
         //" +"表示匹配一个或多个空格
     String[] strArr = ip.split(" +");
         System.out.println("拆分为 "+ strArr.length);
